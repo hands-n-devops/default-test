@@ -29,10 +29,7 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        queries: |
-            +security
-            +security-extended
-            +security-and-quality       
+        queries: "+security,+security-extended,+security-and-quality"      
       env:
         CODEQL_EXTRACTOR_PYTHON_INCLUDE: '**/*.py'
 
