@@ -1,4 +1,5 @@
-# .github/codeql/codeql-config.yml
 name: "Custom CodeQL Config"
+
 queries:
-  - uses: github/codeql/python/ql/src/codeql-suites/python-security-and-quality.qls
+  - uses: security-extended
+  - uses: security-and-quality
