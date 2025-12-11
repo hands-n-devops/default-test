@@ -29,6 +29,8 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
+      env:
+        CODEQL_EXTRACTOR_PYTHON_INCLUDE: '**/*.py'
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v3
