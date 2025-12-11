@@ -28,7 +28,8 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v4
       with:
-        languages: ${{ matrix.language }}  
+        languages: ${{ matrix.language }} 
+        config-file: .github/codeql/codeql-config.yml
       env:
         CODEQL_EXTRACTOR_PYTHON_INCLUDE: '**/*.py'
 
